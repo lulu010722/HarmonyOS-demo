@@ -1,0 +1,56 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:/Users/LULU/.ohos/config/default_demo_AxgCUUcEYC3oZcx-_xkl662wmbQ3ICLDG1DaORjvZWY=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BFF130ED998E948520005D8E976BCF678C2B5C7633EF063E24AAC3AC2E9FC866A177CD2BB5E24C7",
+          "profile": "C:/Users/LULU/.ohos/config/default_demo_AxgCUUcEYC3oZcx-_xkl662wmbQ3ICLDG1DaORjvZWY=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:/Users/LULU/.ohos/config/default_demo_AxgCUUcEYC3oZcx-_xkl662wmbQ3ICLDG1DaORjvZWY=.p12",
+          "storePassword": "0000001B71E0387B20971F3183866B3BD273E9DA31BF62EFE1C2929454BEA328B0E59B0F0BC7E85892395B"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.0.1(21)",
+        "compatibleSdkVersion": "6.0.1(21)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
