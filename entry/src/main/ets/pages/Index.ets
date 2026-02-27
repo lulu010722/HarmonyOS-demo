@@ -1,7 +1,7 @@
-@Entry
+@Preview
 @Component
-struct Index {
-  @State message: string = '脑婆，人家厉不厉害~~';
+export default struct Index {
+  @State message: string = '天宇小账本';
 
   build() {
     RelativeContainer() {
@@ -14,7 +14,7 @@ struct Index {
           middle: { anchor: '__container__', align: HorizontalAlign.Center }
         })
         .onClick(() => {
-          this.message = 'Welcome';
+          this.message = '欢迎使用天宇小账本';
         })
     }
     .height('100%')

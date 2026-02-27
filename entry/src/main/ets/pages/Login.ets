@@ -1,8 +1,8 @@
 import { LengthMetrics } from '@kit.ArkUI';
 
-@Entry
+@Preview
 @Component
-struct Login {
+export default struct Login {
   @State username: string | null = null;
   @State password: string | null = null;
 
@@ -56,3 +56,4 @@ struct Login {
     .margin(24)
   }
 }
+
