@@ -3,6 +3,10 @@
     {
       "name": "app_name",
       "value": "demo"
+    },
+    {
+      "name": "Internet",
+      "value": "Internet permission requested"
     }
   ]
 }

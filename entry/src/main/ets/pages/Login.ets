@@ -14,7 +14,7 @@ export default struct Login {
       space: { main: LengthMetrics.vp(48), cross: LengthMetrics.vp(8) }
     }) {
       Column() {
-        Text('天宇记账本').fontSize(28).fontWeight(FontWeight.Bold)
+        Text('天宇小账本').fontSize(28).fontWeight(FontWeight.Bold)
         Text('开始记录自己的开销吧').fontSize(16).fontWeight(FontWeight.Lighter)
       }
 

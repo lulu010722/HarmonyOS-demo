@@ -1,4 +1,4 @@
-import Index from './Index';
+import Home from './Home';
 import Login from './Login';
 
 @Entry
@@ -39,7 +39,7 @@ struct MainPage {
         controller: this.tabsController
       }) {
         TabContent() {
-          Index()
+          Home()
         }
         .padding({ left: '12vp', right: '12vp' })
         .backgroundColor($r('sys.color.point_color_checked'))

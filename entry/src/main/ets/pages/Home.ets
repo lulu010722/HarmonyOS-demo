@@ -1,6 +1,8 @@
+import RDBStoreUtil from '../storage/RDBStoreUtil';
+
 @Preview
 @Component
-export default struct Index {
+export default struct Home {
   @State message: string = '天宇小账本';
 
   build() {
@@ -16,6 +18,19 @@ export default struct Index {
         .onClick(() => {
           this.message = '欢迎使用天宇小账本';
         })
+      Button('+')
+        .type(ButtonType.Circle)
+        .alignRules({
+          center: { anchor: '__container__', align: VerticalAlign.Bottom },
+          middle: { anchor: '__container__', align: HorizontalAlign.Center }
+        })
+        .margin({
+          bottom: '48vp'
+        })
+        .onClick(() => {
+          RDBStoreUtil.insertTransaction();
+        })
+
     }
     .height('100%')
     .width('100%')
